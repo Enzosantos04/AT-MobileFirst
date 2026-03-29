@@ -6,13 +6,12 @@ export default function Buttons({ onAddImage, onRemoveImage, count }) {
         <button className={styles.myButton} onClick={onAddImage}>
           +
         </button>
-
+        <div className={styles.countContainer}>
+          <p>{count}</p>
+        </div>
         <button className={styles.myButton} onClick={onRemoveImage}>
           -
         </button>
-      </div>
-      <div className={styles.countContainer}>
-        <p>{count}</p>
       </div>
     </>
   );

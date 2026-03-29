@@ -1,22 +1,24 @@
 import Buttons from "./buttons";
 // import styles from "./ex3.module.css";
 import { useState } from "react";
+import Images from "./images";
 export default function Exercicio3() {
   const [images, setImages] = useState([]);
   const [count, setCount] = useState(0);
 
   const addImage = () => {
     const newImage = `https://picsum.photos/200?random=${Math.floor(Math.random() * 1000)}`;
-    setImages([...images, newImage]);
+
     if (count < 5) {
       setCount(count + 1);
+      setImages([...images, newImage]);
     }
   };
 
   const removeImage = () => {
-    setImages(images.slice(0, -1));
     if (count > 0) {
       setCount(count - 1);
+      setImages(images.slice(0, -1));
     }
   };
   return (
@@ -27,11 +29,7 @@ export default function Exercicio3() {
         count={count}
         btnMessage={"-"}
       />
-      <div>
-        {images.map((img, index) => (
-          <img key={index} src={img} alt="Imagem" />
-        ))}
-      </div>
+      <Images images={images} />
     </div>
   );
 }
