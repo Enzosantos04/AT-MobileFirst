@@ -51,6 +51,13 @@
        font-size: 18px;
    }
 
+   .globalMenuContent nav ul li:hover {
+       background-color: #1e40af;
+       transition: all 0.3s ease;
+   }
+
+
+
 
    .contextMenu {
        grid-area: contextMenu;
@@ -185,6 +192,10 @@
 
        }
 
+       .globalMenuContent nav ul li:hover {
+           background-color: #1e40af;
+           transition: all 0.3s ease;
+       }
 
 
    }
