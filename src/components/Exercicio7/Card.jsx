@@ -3,7 +3,7 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 const CardContainer = styled.div`
   width: 300px;
-  margin: 2rem auto;
+  margin: 32px auto;
   border: 1px solid #ccc;
   border-radius: 12px;
   overflow: hidden;
@@ -12,12 +12,18 @@ const CardContainer = styled.div`
 `;
 
 const Header = styled.div`
-  padding: 1rem;
+  padding: 16px;
   text-align: center;
   height: 220px;
   background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGO0QYe6lmqL3IF-8oRssPf1scvwenpqcWwUWnnYm7kswsT4TuAe1CvpmzejZYWui153TeQa7YxSZXK01Dv0ISLqgB636jT6x4jQr_EG4&s=10")
     no-repeat center center;
   background-size: cover;
+`;
+
+const ProfileInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
 `;
 
 const Name = styled.h2`
@@ -35,7 +41,7 @@ const Info = styled.p`
 const Icons = styled.div`
   display: flex;
   justify-content: space-around;
-  padding: 0.8rem;
+  padding: 12px;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
 `;
@@ -61,10 +67,12 @@ export default function Card({ tarefas }) {
   return (
     <CardContainer>
       <Header></Header>
-      <Name>Linus Torvalds</Name>
-      <Info>12 de outubro de 1969</Info>
-      <Info>Tecnologia</Info>
-      <Info>Engenheiro de software</Info>
+      <ProfileInfo>
+        <Name>Linus Torvalds</Name>
+        <Info>12 de outubro de 1969</Info>
+        <Info>Tecnologia</Info>
+        <Info>Engenheiro de software</Info>
+      </ProfileInfo>
 
       <Icons>
         <FaPhone />
