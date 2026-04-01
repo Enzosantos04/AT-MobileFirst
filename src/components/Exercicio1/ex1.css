@@ -23,20 +23,20 @@ header {
 }
 
 
-.nav-links {
+.nav-links-1 {
     list-style: none;
     display: flex;
     gap: 10px;
 }
 
-.nav-links li a {
+.nav-links-1 li a {
     text-decoration: none;
     color: white;
     font-size: 18px;
     font-family: Roboto, sans-serif;
 }
 
-.nav-links li a:hover {
+.nav-links-1 li a:hover {
     color: #3b82f6;
     transition: color 0.3s ease;
 }

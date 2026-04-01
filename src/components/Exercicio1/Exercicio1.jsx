@@ -8,7 +8,7 @@ export default function Exercicio1() {
           src="https://curso.infnet.com.br/c/wp-content/uploads/sites/5/2022/12/Infnet-Logo.png"
           alt=""
         />
-        <ul className="nav-links">
+        <ul className="nav-links-1">
           <li>
             <a href="#home">Produtos</a>
           </li>
