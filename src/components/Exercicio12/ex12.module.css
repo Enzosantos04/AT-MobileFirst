@@ -1,0 +1,47 @@
+.box {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 16px;
+    background-color: #f5f5f5;
+}
+
+.paper {
+    width: 100%;
+    max-width: 720px;
+    padding: 16px;
+    border-radius: 12px;
+}
+
+.itemCard {
+    cursor: pointer;
+}
+
+.itemTotal {
+    margin-top: 8px;
+    color: red;
+}
+
+
+.totalBox {
+    margin-top: 12px;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #fafafa;
+    cursor: pointer;
+}
+
+.totalPrice {
+    color: #2e7d32;
+}
+
+@media (min-width: 768px) {
+    .box {
+        padding: 32px;
+    }
+
+    .paper {
+        padding: 24px;
+    }
+}
