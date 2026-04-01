@@ -62,37 +62,44 @@ header {
     cursor: pointer;
 }
 
-.nav-links.active {
-    display: block;
+.dropdown {
     position: absolute;
-    top: 130px;
+    background-color: #0f172a;
+    top: 150px;
     left: 0;
     width: 100%;
-    background-color: #0f172a;
     padding: 20px 0;
     border-radius: 0px 0px 10px 10px;
     transition: all 0.3s ease;
 }
 
-.nav-links.active ul {
+.dropdown ul {
     display: flex;
     flex-direction: column;
 }
 
-.nav-links.active li {
+.dropdown li {
     padding: 12px 20px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.nav-links.active li:last-child {
+.dropdown li:last-child {
     border-bottom: none;
 }
 
-.nav-links.active li a {
-    font-size: 16px;
+.dropdown li a {
+    font-size: 18px;
     font-weight: 500;
     letter-spacing: 0.5px;
     transition: color 0.2s ease;
+    color: white;
+    font-family: Roboto, sans-serif;
+    text-decoration: none;
+}
+
+.dropdown li a:hover {
+    color: #3b82f6;
+    transition: color 0.3s ease;
 }
 
 
