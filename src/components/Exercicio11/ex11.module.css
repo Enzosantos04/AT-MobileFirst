@@ -1,0 +1,285 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #F9FAFB;
+}
+
+.header {
+    padding: 20px;
+    background-color: #0f172a;
+}
+
+.globalMenu {
+    padding: 20px;
+    background-color: #003F7A;
+}
+
+.globalMenuContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.globalMenuContent nav ul {
+    display: none;
+    gap: 20px;
+}
+
+.globalMenuContent nav ul li {
+    list-style: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.globalMenuContent a {
+    text-decoration: none;
+    color: #ECEFF1;
+    cursor: pointer;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+}
+
+.globalMenuContent a:hover {
+    color: #1e40af;
+    transition: all 0.3s ease;
+}
+
+.dropdownMenu {
+    display: block;
+    position: absolute;
+    top: 272px;
+    left: 0;
+    width: 100%;
+    background-color: #0f172a;
+    padding: 20px 0;
+    border-top: 1px solid #1e40af;
+    border-radius: 0px 0px 10px 10px;
+    transition: all 0.3s ease;
+}
+
+.globalMenuContent .dropdownMenu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.dropdownMenu ul li {
+    list-style: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dropdownMenu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin: 10px 20px;
+    gap: 20px;
+    font-family: Roboto, sans-serif;
+    width: 100%;
+}
+
+.dropdownMenu li {
+    padding: 12px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dropdownMenu li:last-child {
+    border-bottom: none;
+}
+
+.dropdownMenu li a:hover {
+    color: #3b82f6;
+    transition: color 0.3s ease;
+}
+
+
+
+.hamburgerBtn {
+    background: none;
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(30, 64, 175, 0.3);
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 28px;
+}
+
+.hamburgerBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(30, 64, 175, 0.4);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.contextMenu {
+    padding: 20px;
+    background-color: #333;
+}
+
+.contextMenuContent h2 {
+    color: #f0f0f0;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.contextMenuContent nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contextMenuContent nav ul li {
+    list-style: none;
+    padding: 10px 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #555;
+}
+
+.contextMenuContent a {
+    color: #b366ff;
+    cursor: pointer;
+    font-family: Roboto, sans-serif;
+}
+
+.mainContent {
+    border: 1px solid #ccc;
+    padding: 20px;
+    font-family: Roboto, sans-serif;
+}
+
+.mainContent h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+.mainContent p {
+    color: #555;
+    font-size: 14px;
+}
+
+.ads {
+    border: 1px solid #ccc;
+    padding: 20px;
+    font-family: Roboto, sans-serif;
+}
+
+.adsContent h2 {
+    color: #333;
+    font-size: 20px;
+}
+
+.adsContent p {
+    color: #555;
+    font-size: 14px;
+}
+
+.adsContent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.adsContent nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.adsContent nav ul li {
+    list-style: none;
+    padding: 10px 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+
+.adsContent a {
+    color: #b366ff;
+    cursor: pointer;
+    font-family: Roboto, sans-serif;
+}
+
+.footer {
+    padding: 20px;
+    background-color: #003F7A;
+}
+
+.footerContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f0f0f0;
+}
+
+.footerContent p {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-areas:
+            "header header header"
+            "globalMenu globalMenu globalMenu"
+            "contextMenu mainContent ads"
+            "footer footer footer";
+        min-height: 100vh;
+    }
+
+    .header {
+        grid-area: header;
+    }
+
+    .globalMenu {
+        grid-area: globalMenu;
+    }
+
+    .contextMenu {
+        grid-area: contextMenu;
+    }
+
+    .mainContent {
+        grid-area: mainContent;
+    }
+
+    .ads {
+        grid-area: ads;
+    }
+
+    .footer {
+        grid-area: footer;
+    }
+
+    .globalMenuContent nav ul {
+        display: flex;
+        gap: 20px;
+    }
+
+    .hamburgerBtn {
+        display: none;
+    }
+
+}
