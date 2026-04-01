@@ -1,8 +1,8 @@
-import { RxHamburgerMenu } from "react-icons/rx";
-import { useState } from "react";
 import { FiUser } from "react-icons/fi";
 import "./ex10.css";
-export default function Exercicio9() {
+import { RxHamburgerMenu } from "react-icons/rx";
+import { useState } from "react";
+export default function Exercicio10() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -16,7 +16,7 @@ export default function Exercicio9() {
           src="https://curso.infnet.com.br/c/wp-content/uploads/sites/5/2022/12/Infnet-Logo.png"
           alt=""
         />
-        <ul className={isOpen ? "nav-links active" : "nav-links"}>
+        <ul className={isOpen ? "dropdown" : "nav-links"}>
           <li>
             <a href="#home">Produtos</a>
           </li>
