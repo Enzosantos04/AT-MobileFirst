@@ -10,6 +10,7 @@ import Exercicio8 from "./exercicios/ex8.jsx";
 import Exercicio9 from "./exercicios/ex9.jsx";
 import Exercicio10 from "./exercicios/ex10.jsx";
 import Exercicio11 from "./exercicios/ex11.jsx";
+import Exercicio12 from "./exercicios/ex12.jsx";
 
 export default function App() {
   const [ex, setEx] = useState(0);
@@ -27,6 +28,8 @@ export default function App() {
       <button onClick={() => setEx(9)}>Exercício 09</button>
       <button onClick={() => setEx(10)}>Exercício 10</button>
       <button onClick={() => setEx(11)}>Exercício 11</button>
+      <button onClick={() => setEx(12)}>Exercício 12</button>
+
       {ex === 1 && <Exercicio1 />}
       {ex === 2 && <Exercicio2 />}
       {ex === 3 && <Exercicio3 />}
@@ -38,6 +41,7 @@ export default function App() {
       {ex === 9 && <Exercicio9 />}
       {ex === 10 && <Exercicio10 />}
       {ex === 11 && <Exercicio11 />}
+      {ex === 12 && <Exercicio12 />}
     </div>
   );
 }
